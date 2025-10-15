@@ -1,0 +1,142 @@
+/* src/Navbar.css */
+
+/* === Pirate Captain's Parchment Navbar === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: linear-gradient(90deg, #fbc02d, #f9a825); /* Roger’s Golden Glow */
+  color: #2a1a14; /* Dark wood tone like a ship’s deck */
+  z-index: 1000;
+  box-shadow: 0 6px 14px rgba(251, 192, 45, 0.7); /* Soft golden haki glow */
+  border-bottom: 4px solid #3a2c1b; /* Deep wood border */
+  font-family: 'Merienda', cursive;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+/* === Captain’s Emblem (Logo) === */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-shadow: 1.5px 1.5px 3px #d32f2f; /* Shanks’ fiery red aura */
+  color: #b71c1c; /* Shanks’ signature deep red */
+  cursor: default;
+}
+
+.logo-highlight {
+  color: #fbc02d; /* Roger’s radiant gold */
+  text-shadow: 0 0 8px #fbc02d; /* Golden glow like the Pirate King’s will */
+}
+
+/* === Crew Navigation (Menu) === */
+.navbar-menu {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+/* === Pirate’s Buttons (Nav buttons) === */
+.navbar-menu button {
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 2px solid #3a2c1b; /* Wood grain border like the Thousand Sunny */
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Merienda', cursive;
+  background-color: #fff8e1; /* Parchment cream */
+  color: #2a1a14;
+  box-shadow: 0 2px 6px rgba(163, 108, 17, 0.3); /* Faint golden haki shadow */
+  user-select: none;
+}
+
+/* === Main Button — Flag of Shanks === */
+.nav-btn {
+  background-color: #d32f2f; /* Shanks’ vibrant red */
+  color: #fff8e1;
+  border-color: #b71c1c; /* Darker blood red */
+  box-shadow: 0 4px 10px rgba(211, 47, 47, 0.7);
+}
+
+.nav-btn:hover {
+  background-color: #b71c1c; /* Deep red intensity */
+  box-shadow: 0 6px 12px rgba(183, 28, 28, 0.9);
+  color: #fff;
+}
+
+.nav-btn.active {
+  background-color: #fbc02d; /* Roger’s golden crown */
+  color: #2a1a14;
+  border-color: #a57c00; /* Ancient treasure gold */
+  box-shadow: 0 0 10px 2px #fbc02d;
+}
+
+/* === Dark Mode Toggle — Haki Mode Switch === */
+.dark-mode-btn {
+  background-color: #3a2c1b; /* Dark haki base */
+  color: #fbc02d; /* Radiant haki gold */
+  border: 2px solid #bca04d; /* Pale gold trim */
+  box-shadow: 0 0 5px 1px #bca04d inset;
+  user-select: none;
+}
+
+.dark-mode-btn:hover {
+  background-color: #fbc02d; /* Bright haki flash */
+  color: #3a2c1b; /* Deep haki shadow */
+  border-color: #d6b431;
+  box-shadow: 0 0 15px 3px #d6b431;
+}
+
+/* === Dark Mode — Night at Sea Theme === */
+.navbar.dark {
+  background: linear-gradient(90deg, #2a1a14, #3a2c1b); /* Midnight parchment */
+  color: #f9f3dc; /* Moonlit parchment cream */
+  border-bottom: 4px solid #bca04d; /* Pale gold moonbeam */
+  box-shadow: 0 6px 14px rgba(183, 145, 30, 0.7);
+}
+
+.navbar.dark .logo-highlight {
+  color: #fbc02d;
+  text-shadow: 0 0 10px #fbc02d;
+}
+
+.navbar.dark .nav-btn {
+  background-color: #b71c1c; /* Deep blood red */
+  color: #fff8e1;
+  border-color: #7a1010;
+  box-shadow: 0 4px 10px rgba(183, 28, 28, 0.7);
+}
+
+.navbar.dark .nav-btn:hover {
+  background-color: #d32f2f;
+  box-shadow: 0 6px 12px rgba(211, 47, 47, 0.9);
+}
+
+.navbar.dark .nav-btn.active {
+  background-color: #fbc02d;
+  color: #2a1a14;
+  border-color: #a57c00;
+  box-shadow: 0 0 15px 3px #fbc02d;
+}
+
+.navbar.dark .dark-mode-btn {
+  background-color: #bca04d; /* Pale gold */
+  color: #3a2c1b; /* Dark haki */
+  border: 2px solid #3a2c1b;
+  box-shadow: 0 0 5px 1px #3a2c1b inset;
+}
+
+.navbar.dark .dark-mode-btn:hover {
+  background-color: #3a2c1b;
+  color: #fbc02d;
+  border-color: #fbc02d;
+  box-shadow: 0 0 10px 3px #fbc02d;
+}

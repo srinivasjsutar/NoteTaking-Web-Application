@@ -1,0 +1,220 @@
+/* Roger & Shanks Haki-Themed NotesList.css */
+
+/* Container */
+.notes-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: flex-start;
+  padding: 24px;
+  background: linear-gradient(135deg, #0f0501 0%, #360808 50%, #732b0a 100%);
+  border: 4px solid #ffd700; /* Gold border like Roger's treasure */
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.8); /* gold haki aura */
+  box-sizing: border-box;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 7%;
+  overflow-y: auto;
+  font-family: 'Merienda', cursive;
+}
+
+/* Header */
+h2 {
+  font-size: 3rem;
+  color: #d32f2f; /* Shanks' commanding red */
+  font-family: 'Bebas Neue', cursive;
+  text-align: center;
+  text-shadow: 3px 3px 7px rgba(153, 0, 0, 0.8); /* powerful red haki */
+  margin-bottom: 28px;
+}
+
+/* Notes List */
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Note Card */
+.note-card {
+  background: rgba(10, 6, 5, 0.95); /* Haki-black */
+  padding: 20px;
+  border: 3px solid #aa1b1b; /* Shanks' red aura */
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(210, 50, 50, 0.7);
+  width: 260px;
+  color: #ffd700; /* Gold like Roger's legacy */
+  position: relative;
+  font-family: 'Noto Serif JP', serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Note Card Header */
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.note-header h3 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: #ffd700;
+  font-family: 'Shadows Into Light', cursive;
+  text-shadow: 2px 2px 6px rgba(139, 0, 0, 0.8);
+}
+
+/* Priority Tags */
+.priority {
+  padding: 6px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 1.8px solid #441100;
+  text-shadow: 0 0 5px #220800;
+}
+
+/* Themed Priority Levels */
+.priority.low {
+  background-color: #552200; /* Dark amber */
+  color: #ffdd88;
+  box-shadow: 0 0 10px #a67c00;
+}
+
+.priority.medium {
+  background-color: #b71c1c; /* Shanks crimson */
+  color: #ffd700;
+  box-shadow: 0 0 14px #ff4444;
+}
+
+.priority.high {
+  background-color: #3b0000; /* Deep blood haki */
+  color: #ffcc00;
+  box-shadow: 0 0 18px #ff8800;
+}
+
+/* Buttons */
+.note-card button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-right: 12px;
+  border: none;
+  font-weight: 700;
+  font-family: 'Bebas Neue', cursive;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Edit = Gold */
+.note-card .edit-btn {
+  background-color: #ffd700;
+  color: #3d0a0a;
+  box-shadow: 0 0 20px #ffd700;
+}
+
+.note-card .edit-btn:hover {
+  background-color: #e6c200;
+  box-shadow: 0 0 28px #fff78a;
+}
+
+/* Delete = Shanks' Red */
+.note-card .delete-btn {
+  background-color: #8b0000;
+  color: #fff;
+  box-shadow: 0 0 22px #ff4444;
+}
+
+.note-card .delete-btn:hover {
+  background-color: #5c0000;
+  box-shadow: 0 0 28px #ff0000;
+}
+
+/* Hover Effect */
+.note-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 35px rgba(255, 50, 50, 0.9); /* fiery aura */
+}
+
+/* Dark Mode */
+.App.dark .notes-list-container {
+  background: linear-gradient(145deg, #050505, #1a0808);
+  border: 3px solid #ffd700;
+  box-shadow: 0 0 24px #ffd700;
+}
+
+.App.dark .note-card {
+  background-color: #100808;
+  color: #ffd700;
+  border-color: #b22222;
+  box-shadow: 0 6px 28px rgba(210, 50, 50, 0.9);
+}
+
+.App.dark .note-header h3 {
+  color: #ffcc00;
+  text-shadow: 2px 2px 5px #440000;
+}
+
+.App.dark .priority.low {
+  background-color: #3a1f00;
+  color: #ffdd88;
+  box-shadow: 0 0 12px #a67c00;
+}
+
+.App.dark .priority.medium {
+  background-color: #a32222;
+  color: #ffd700;
+  box-shadow: 0 0 16px #ff4444;
+}
+
+.App.dark .priority.high {
+  background-color: #300000;
+  color: #ffcc00;
+  box-shadow: 0 0 20px #ff8800;
+}
+
+.App.dark .note-card .edit-btn {
+  background-color: #cca300;
+  box-shadow: 0 0 24px #ffd633;
+}
+
+.App.dark .note-card .edit-btn:hover {
+  background-color: #a38300;
+  box-shadow: 0 0 30px #ffea00;
+}
+
+.App.dark .note-card .delete-btn {
+  background-color: #7a0d0d;
+  box-shadow: 0 0 24px #ff0000;
+}
+
+.App.dark .note-card .delete-btn:hover {
+  background-color: #4b0606;
+  box-shadow: 0 0 30px #ff2200;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .notes-list-container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .notes-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .note-card {
+    width: 100%;
+    max-width: 320px;
+  }
+}
